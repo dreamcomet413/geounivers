@@ -1,0 +1,63 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  identify_id: 1
+  name: MyString
+  address: MyString
+  city: MyString
+  state: MyString
+  zip: MyString
+  phone: MyString
+  opeid: MyString
+  ipeds_unitid: MyString
+  web_address: MyString
+  campus_id: 1
+  campus_name: MyString
+  campus_address: MyString
+  campus_city: MyString
+  campus_state: MyString
+  campus_zip: MyString
+  campus_ipeds_unitid: MyString
+  accreditation_type: MyString
+  agency_name: MyString
+  agency_status: MyString
+  program_name: MyString
+  accreditation_status: MyString
+  accreditation_date_type: MyString
+  periods: MyString
+  last_action: MyString
+  action_date: 2017-07-19 03:41:12
+  justification: MyString
+  other_justification: MyString
+  justification_url: MyString
+
+two:
+  identify_id: 1
+  name: MyString
+  address: MyString
+  city: MyString
+  state: MyString
+  zip: MyString
+  phone: MyString
+  opeid: MyString
+  ipeds_unitid: MyString
+  web_address: MyString
+  campus_id: 1
+  campus_name: MyString
+  campus_address: MyString
+  campus_city: MyString
+  campus_state: MyString
+  campus_zip: MyString
+  campus_ipeds_unitid: MyString
+  accreditation_type: MyString
+  agency_name: MyString
+  agency_status: MyString
+  program_name: MyString
+  accreditation_status: MyString
+  accreditation_date_type: MyString
+  periods: MyString
+  last_action: MyString
+  action_date: 2017-07-19 03:41:12
+  justification: MyString
+  other_justification: MyString
+  justification_url: MyString
