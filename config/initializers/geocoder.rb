@@ -14,12 +14,13 @@ Geocoder.configure(
 )
 
 Geocoder::Configuration.timeout = 100
-
-# geocoding service (see below for supported options):
-Geocoder::Configuration.lookup = :google
+Geocoder::Configuration.api_key = "AIzaSyCqTDP7tm0YNYp8wsQdkzGXz88OBQ_WVR0"
 
 # use HTTPS for geocoding service connections:
 Geocoder::Configuration.use_https = true
 
 # language to use (for search queries and reverse geocoding):
 Geocoder::Configuration.language = :en
+
+Geocoder::Configuration.always_raise << Geocoder::OverQueryLimitError
+

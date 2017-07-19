@@ -4,7 +4,7 @@ development:
   database: geounivers_development
   pool: 5
   username: postgres
-  password:
+  password: postgres
 
 production:
   adapter: postgresql

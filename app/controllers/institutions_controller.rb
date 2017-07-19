@@ -5,10 +5,10 @@ class InstitutionsController < ApplicationController
   def index
     if params[:school].present?
       @institutions = Institution.find_by_school(params[:school])
-    elsif params[:location].present? || params[:radius].present? || params[:limit]
-
-    elsif params[:zip].present? || params[:radius].present? || params[:limit]
-      
+    elsif params[:location].present? && params[:radius].present? && params[:limit]
+      @institutions = Institution.location_within_radius
+    elsif params[:zip].present? && params[:radius].present? && params[:limit]
+      @institutions = Institution.zip_within_radius
     else
       @institutions = Institution.first
     end
