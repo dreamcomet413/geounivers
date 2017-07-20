@@ -39,18 +39,17 @@ csv.each do |row|
   puts "-------------------------------------------------------------------"
   
   full_address = "#{institution.address}, " + "#{institution.city}, " + "#{institution.state}"
-  binding.pry
-  # result = Geocoder.coordinates(full_address)
+  result = Geocoder.coordinates(full_address)
 
-  # if result.nil?
-  #   institution.latitude = nil
-  #   institution.longitude = nil
-  # else
-  #   institution.latitude = result[0]
-  #   institution.longitude = result[1]
-  # end
+  if result.nil?
+    institution.latitude = nil
+    institution.longitude = nil
+  else
+    institution.latitude = result[0]
+    institution.longitude = result[1]
+  end
 
-  # puts "Latitude = " + "#{institution.latitude}, Longitude = " + "#{institution.longitude}"
+  puts "Latitude = " + "#{institution.latitude}, Longitude = " + "#{institution.longitude}"
 
   institution.save
 end
